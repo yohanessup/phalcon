@@ -17,6 +17,12 @@ class Employee extends Model
     var $dataUpdate;
     var $dbAdapter;
 
+    var $tableColumnName = array(
+        "first_name", "last_name", "email", "gender", "phone_number"
+    );
+
+    const tableName = "Employees";
+
     public function setId($emp_id)
     {
         $this->id = $emp_id;
@@ -61,9 +67,9 @@ class Employee extends Model
         $connection = $this->dbAdapter;
 
         $success = $connection->insert(
-            "employees",
+            $this::tableName,
             $this->dataInsert,
-            ["first_name", "last_name", "email", "gender", "phone_number"]
+            $this->tableColumnName
         );
 
         return $success;
@@ -74,8 +80,8 @@ class Employee extends Model
         $connection = $this->dbAdapter;
 
         $success = $connection->update(
-            "employees",
-            ["first_name", "last_name", "email", "gender", "phone_number"],
+            $this::tableName,
+            $this->tableColumnName,
             $this->dataUpdate,
             [
                 "conditions" => "id = ?",
@@ -91,7 +97,7 @@ class Employee extends Model
         $connection = $this->dbAdapter;
 
         $success = $connection->delete(
-            "employees",
+            $this::tableName,
             "id = ?",
             [$this->id]
         );

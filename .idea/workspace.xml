@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9473201b-1d54-4457-be2e-86736efff444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Employee.php" afterPath="$PROJECT_DIR$/models/Employee.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +40,11 @@
       <file leaf-file-name="Employee.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/Employee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+            <state relative-caret-position="418">
+              <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
               <folding>
-                <marker date="1505442913753" expanded="true" signature="754:777" ph="SELECT * FRO... employees" />
-                <marker date="1505442913753" expanded="true" signature="931:965" ph="SELECT * FRO... employees" />
+                <marker date="1505468339867" expanded="true" signature="901:924" ph="SELECT * FRO... employees" />
+                <marker date="1505468339867" expanded="true" signature="1078:1112" ph="SELECT * FRO... employees" />
               </folding>
             </state>
           </provider>
@@ -139,8 +140,8 @@
       <list>
         <option value="$PROJECT_DIR$/routes/collections/employee.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/models/Employee.php" />
         <option value="$PROJECT_DIR$/controllers/EmployeeController.php" />
+        <option value="$PROJECT_DIR$/models/Employee.php" />
       </list>
     </option>
   </component>
@@ -172,6 +173,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,13 +212,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ci" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -270,18 +271,18 @@
       <workItem from="1505440118121" duration="1424000" />
       <workItem from="1505441990208" duration="1781000" />
       <workItem from="1505443808007" duration="297000" />
-      <workItem from="1505444694355" duration="74000" />
+      <workItem from="1505444694355" duration="1099000" />
+      <workItem from="1505467239554" duration="1098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32471000" />
+    <option name="totallyTimeSpent" value="34594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30937973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3139183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -738,11 +739,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Employee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+        <state relative-caret-position="418">
+          <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
           <folding>
-            <marker date="1505442913753" expanded="true" signature="754:777" ph="SELECT * FRO... employees" />
-            <marker date="1505442913753" expanded="true" signature="931:965" ph="SELECT * FRO... employees" />
+            <marker date="1505468339867" expanded="true" signature="901:924" ph="SELECT * FRO... employees" />
+            <marker date="1505468339867" expanded="true" signature="1078:1112" ph="SELECT * FRO... employees" />
           </folding>
         </state>
       </provider>
