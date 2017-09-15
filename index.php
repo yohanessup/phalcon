@@ -25,6 +25,15 @@ $loader->registerNamespaces(array(
  */
 $di = new DefaultDI();
 
+$di->set('dbadpt', function(){
+    return new \Phalcon\Db\Adapter\Pdo\Mysql(array(
+        "host" => "localhost",
+        "username" => "root",
+        "password" => "",
+        "dbname" => "employee",
+        'options' => [PDO::ATTR_CASE => PDO::CASE_LOWER, PDO::ATTR_PERSISTENT => TRUE,PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC],
+    ));
+});
 
 /**
  * Return array of the Collections, which define a group of routes, from
