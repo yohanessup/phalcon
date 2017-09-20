@@ -14,11 +14,23 @@ use PhalconRest\Models\Employee;
 
 class EmployeeController extends RESTController{
 
-    public function get(){
-        $connection = $this->dbadpt;
+    public function getModel(){
+        $connection = $this->getConnection();
 
         $model = new Employee();
         $model->setDbAdapter($connection);
+
+        return $model;
+    }
+
+    public function getConnection(){
+        $connection = $this->dbadpt;
+
+        return $connection;
+    }
+
+    public function get(){
+        $model = $this->getModel();
 
         $data = $model->getAllData();
         $results = $data->fetchAll();
@@ -27,10 +39,7 @@ class EmployeeController extends RESTController{
     }
 
     public function getOne($id){
-        $connection = $this->dbadpt;
-
-        $model = new Employee();
-        $model->setDbAdapter($connection);
+        $model = $this->getModel();
         $model->setId($id);
 
         $data = $model->getSpecificData();
@@ -40,7 +49,7 @@ class EmployeeController extends RESTController{
     }
 
     public function post(){
-        $connection = $this->dbadpt;
+        $model = $this->getModel();
 
         $request = new Request();
         $first_name = $request->getPost('first_name');
@@ -53,8 +62,6 @@ class EmployeeController extends RESTController{
             $first_name, $last_name, $email, $gender, $phone_number
         );
 
-        $model = new Employee();
-        $model->setDbAdapter($connection);
         $model->setDataInsert($dataPost);
 
         $success = $model->postData();
@@ -67,10 +74,8 @@ class EmployeeController extends RESTController{
     }
 
     public function delete($id){
-        $connection = $this->dbadpt;
+        $model = $this->getModel();
 
-        $model = new Employee();
-        $model->setDbAdapter($connection);
         $model->setId($id);
 
         $success = $model->deleteData();
@@ -83,7 +88,7 @@ class EmployeeController extends RESTController{
     }
 
     public function put($id){
-        $connection = $this->dbadpt;
+        $model = $this->getModel();
 
         $request = new Request();
         $first_name = $request->getPut('first_name');
@@ -96,8 +101,6 @@ class EmployeeController extends RESTController{
             $first_name, $last_name, $email, $gender, $phone_number
         );
 
-        $model = new Employee();
-        $model->setDbAdapter($connection);
         $model->setId($id);
         $model->setDataUpdate($dataUpdate);
 
